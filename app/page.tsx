@@ -206,7 +206,7 @@ export default function TestOllamaPage() {
                 <div className="font-mono text-xs text-muted-foreground pl-5 space-y-0.5">
                   <p>Fix: set the env variable below, then restart Ollama.</p>
                   <p className="rounded-sm bg-muted/30 border border-border px-2 py-1 text-foreground inline-block">
-                    OLLAMA_ORIGINS=http://localhost:3000
+                    OLLAMA_ORIGINS={window.location.origin}
                   </p>
                 </div>
               </div>
